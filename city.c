@@ -73,3 +73,34 @@ double compute_average(city* ptrs[NUM_CITIES], int (*callback)(const city*)) {
 }
 
 //TODO: implement get_city_population
+int get_city_population(const city* x){
+  return x->population;
+}
+
+void search_city(city *ptrs[NUM_CITIES],char[] user_input){
+  for (int i = 0; i < NUM_CITIES; i++){
+   int check = 0;
+   char[] temp = *ptrs[i] -> name;
+   if (ptrs.length == user_input.length && temp[0] == user_input[0]){
+     printf("%d", temp->population);
+     break;
+   }
+   for (int j = 0; j < user_input.length; j++){
+      if (temp[j] != user_input[j]){
+        break;
+      } else{
+      if (j == user_input.length-1){
+        check = 1;
+     }
+     }
+
+    }
+  if (check==1){
+    printf("%s", temp->name);
+  } 
+  }
+
+  
+
+
+}

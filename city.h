@@ -17,6 +17,7 @@ int load_cities(city *ptrs[NUM_CITIES]);
 int sort_by_name(const void* lhs, const void* rhs);
 int sort_by_population(const void* lhs, const void* rhs);
 
+void search_city(city *ptrs[NUM_CITIES],char[] user_input);
 // For use with compute_average.
 int get_city_string_length(const city* x);
 int get_city_population(const city* x);
